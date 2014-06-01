@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Markdown",
+  "description": "Markdown on Facebook!",
+  "version": "1.0.0",
+
+  "permissions": [
+    "https://www.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "css": ["css/markdown.css"],
+      "js": ["js/marked.js", "js/app.js"]
+    }
+  ]
+}
